@@ -1,6 +1,6 @@
 obj-m := state_machine.o
 
-export BUILDROOT=/home/kesl/grepp/src/buildroot
+export BUILDROOT=/home/li/buildroot/
 export ARCH=arm64
 export CROSS_COMPILE=$(BUILDROOT)/output/host/bin/aarch64-buildroot-linux-gnu-
 

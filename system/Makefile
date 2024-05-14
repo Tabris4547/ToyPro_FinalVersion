@@ -8,7 +8,7 @@ ENGINE = ./engine
 
 INCLUDES = -I$(SYSTEM) -I$(UI) -I$(WEB_SERVER) -I$(HAL) -I./
 
-BUILDROOT_DIR=/home/kesl/grepp/src/buildroot/
+BUILDROOT_DIR=/home/li/buildroot/
 TOOLCHAIN_PATH=${BUILDROOT_DIR}/output/host/bin
 CC=${TOOLCHAIN_PATH}/aarch64-buildroot-linux-gnu-gcc
 CXX=${TOOLCHAIN_PATH}/aarch64-buildroot-linux-gnu-g++

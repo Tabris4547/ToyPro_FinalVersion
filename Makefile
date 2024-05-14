@@ -4,7 +4,7 @@ V = 0
 Q = $(if $(filter 1,$V),,@)
 M = $(shell printf "\033[34;1m▶\033[0m")
 
-BUILDROOT_DIR=/home/kesl/grepp/src/buildroot/
+BUILDROOT_DIR=/home/li/buildroot/
 TOOLCHAIN_PATH=${BUILDROOT_DIR}/output/host/bin
 CC=${TOOLCHAIN_PATH}/aarch64-buildroot-linux-gnu-gcc
 CXX=${TOOLCHAIN_PATH}/aarch64-buildroot-linux-gnu-g++
@@ -154,7 +154,7 @@ modules:
 .PHONY: nfs
 nfs:
 	cp $(TARGET) ~/nfs/
-	cp toy-be/toy-be ~/nfs/
+	#cp toy-be ~/nfs/
 	cp drivers/state_machine/state_machine.ko ~/nfs/
 	cp drivers/engine/engine.ko ~/nfs/
 	cp drivers/sensor/sensor.ko ~/nfs/
